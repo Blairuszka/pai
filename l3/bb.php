@@ -1,0 +1,10 @@
+<?php
+	$hn = 'localhost'; // Nazwa hosta
+    $db = 'qq'; // Nazwa bazy danych
+    $un = 'root'; // Nazwa użytkownika
+    $pw = ''; // Hasło 
+	
+	require_once 'login.php';
+    $conn = new mysqli($hn, $un, $pw, $db);
+    if($conn ->connect_error) die($conn->connect_error);
+?>
